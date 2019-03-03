@@ -48,28 +48,20 @@ img {
 #header .right a {
   color: #fff;
 }
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #006699;
-  height: 0.45rem;
-}
-#footer div a {
-  height: 100%;
-  text-align: center;
-  display: block;
-  color: white;
-}
-#footer div a i {
-  vertical-align: middle;
-}
-#footer div a p {
-  color: white;
-}
 #main {
   padding: 0.45rem 0;
+  height: 100vh;
+  position: relative;
+}
+#main .mui-scroll-wrapper {
+  position: relative;
+  height: 100%;
+}
+#main .swiper-container {
+  height: 100%;
+}
+#main .swiper-container .swiper-slide {
+  height: auto;
 }
 #main #nav {
   padding: 0.1rem;
@@ -155,4 +147,27 @@ img {
 }
 #main #man .content div a img {
   width: 100%;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #006699;
+  height: 0.45rem;
+}
+#footer .mui-row div a {
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: .1rem 0;
+}
+#footer .mui-row div a i {
+  vertical-align: middle;
+}
+#footer .mui-row div a.active {
+  color: orange;
 }
